@@ -1,0 +1,31 @@
+@import "../src/Utilities.scss";
+
+
+
+.Color{
+  color:red;  
+};
+.BODY{
+background-color: green;
+};
+.god{
+  color:black
+};
+
+
+
+@mixin DIV($color) {
+  border: 1px solid $color;
+};
+
+.BOX{
+@include WIDTHOFBOX(50%);
+
+
+};
+
+
+
+
+
+

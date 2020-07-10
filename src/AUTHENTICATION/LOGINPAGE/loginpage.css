@@ -1,0 +1,210 @@
+.m-1 {
+  margin: 1rem;
+}
+
+.my-1 {
+  margin: 1rem 0;
+}
+
+.p-1 {
+  padding: 1rem;
+}
+
+.py-1 {
+  padding: 1rem 0;
+}
+
+.m-2 {
+  margin: 2rem;
+}
+
+.my-2 {
+  margin: 2rem 0;
+}
+
+.p-2 {
+  padding: 2rem;
+}
+
+.py-2 {
+  padding: 2rem 0;
+}
+
+.m-3 {
+  margin: 3rem;
+}
+
+.my-3 {
+  margin: 3rem 0;
+}
+
+.p-3 {
+  padding: 3rem;
+}
+
+.py-3 {
+  padding: 3rem 0;
+}
+
+.m-4 {
+  margin: 4rem;
+}
+
+.my-4 {
+  margin: 4rem 0;
+}
+
+.p-4 {
+  padding: 4rem;
+}
+
+.py-4 {
+  padding: 4rem 0;
+}
+
+.m-5 {
+  margin: 5rem;
+}
+
+.my-5 {
+  margin: 5rem 0;
+}
+
+.p-5 {
+  padding: 5rem;
+}
+
+.py-5 {
+  padding: 5rem 0;
+}
+
+.MAIN {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  max-width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 29rem;
+  border-radius: 1rem;
+  border: 1px solid black;
+  margin-top: 5rem;
+}
+
+.Leftside {
+  width: 40%;
+  background-color: white;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  padding-top: 5rem;
+}
+
+.Leftside-Leftside_of_contetn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  height: auto;
+}
+
+.Leftside-Leftside_of_contetn h1 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.7rem;
+  line-height: 1.5rem;
+  color: #000000;
+}
+
+.Leftside-Leftside_of_contetn input {
+  width: auto;
+  outline: none;
+  font-weight: 100px;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  border-style: none;
+  border-bottom: 1px solid blue;
+}
+
+.Leftside-Leftside_of_contetn input::-webkit-input-placeholder {
+  text-decoration: none;
+  color: gray;
+}
+
+.Leftside-Leftside_of_contetn input:-ms-input-placeholder {
+  text-decoration: none;
+  color: gray;
+}
+
+.Leftside-Leftside_of_contetn input::-ms-input-placeholder {
+  text-decoration: none;
+  color: gray;
+}
+
+.Leftside-Leftside_of_contetn input::placeholder {
+  text-decoration: none;
+  color: gray;
+}
+
+.Leftside-Leftside_of_contetn label {
+  font-style: normal;
+}
+
+.Leftside-Leftside_of_contetn-BUT_A {
+  background-color: blue;
+  color: white;
+  border-radius: 0.5rem;
+  height: 2.5rem;
+  border: none;
+  outline: none;
+  margin: 0;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.Leftside-Leftside_of_contetn-BUT_A:active {
+  color: green;
+}
+
+.Leftside-Leftside_of_contetn-BUT_B {
+  border: 2px solid blue;
+  margin-top: 0.5rem;
+  color: blue;
+  border-radius: 0.5rem;
+  height: 2.5rem;
+  background-color: white;
+  height: 2.5rem;
+  outline: none;
+  margin-bottom: 1rem;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.Leftside-Leftside_of_contetn-BUT_B :focus {
+  color: black;
+}
+
+.Leftside-Leftside_of_contetn-BUT_B:active {
+  color: white;
+}
+
+.rightside {
+  width: 60%;
+  border-top-right-radius: 1rem;
+}
+/*# sourceMappingURL=loginpage.css.map */

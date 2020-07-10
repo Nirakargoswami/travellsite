@@ -1,26 +1,58 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+
+import PAPERBOX  from "./PAPERBOX"
+import LANDINGPAGE from "./Landingpage"
+import LOGINPAGE from "./LOGPAGE/LOGINPAGE"
+import LOGO from "/home/bhumika/Desktop/TEST/test-app/src/photo.jpg";
+import {auth} from "./LOGPAGE/FIREBASE_CONFIGURATION"
+import userprofile from "./LOGPAGE/FIREBASE_CONFIGURATION"
+
+class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+
+      user:"null"
+    };
+  }
+
+  componentDidMount() {
+    auth.onAuthStateChanged((user) => {
+    this.setState({
+      user : user
+    })
+    });
+   
+  }
+
+  render() {
+        console.log(this.state.user)
+    return (
+      <div>
+     
+
+         <Switch>
+          <Route exact path="/" render={(props)=>   <LANDINGPAGE   {...props}  user={this.state.user} />  }/>
+
+
+      <Route   render={(props)=>  <LOGINPAGE       
+      
+      user={this.state.user}
+      {...props}
+      
+      />  } />
+        </Switch> 
+      </div>
+    );
+  }
 }
+  
 
 export default App;

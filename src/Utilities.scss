@@ -1,0 +1,39 @@
+
+
+
+@mixin WIDTHOFBOX($Width){
+  width:$Width ;
+};
+
+
+
+$spaceamounts: (1,2,3,4,5);
+
+@each $space in $spaceamounts {
+  .m-#{$space} {
+    margin: #{$space}rem;
+  }
+  .my-#{$space} {
+    margin: #{$space}rem 0;
+  }
+
+  .p-#{$space} {
+    padding: #{$space}rem;
+  }
+  .py-#{$space} {
+    padding: #{$space}rem 0;
+  }
+}
+
+
+
+@mixin  FLEXBOX ($DIRECTION,$justifycontent,$alignitem){
+display: flex;
+flex-direction: $DIRECTION;
+justify-content: $justifycontent;
+align-items: $alignitem;
+
+
+}
+
+
