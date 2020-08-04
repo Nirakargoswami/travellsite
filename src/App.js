@@ -8,7 +8,7 @@ import DESHBORD from "./DESHBORD/DESHBORD";
  import Loginpage from "./LOGPAGE/Materialui_sign";
  import SINGHUP_PAGE from "./LOGPAGE/SINGHUP";
  import { auth } from "./LOGPAGE/FIREBASE_CONFIGURATION";
- import Automation from "./automation";
+
  import Userform from "./USER/USERFORM/userform";
  import TRAKERFROM from "./TRACKER/TRAKERFORM/TRAKERFROM";
  import timer from "./AUTHENTICATION/LOGINPAGE/timer";
