@@ -329,4 +329,48 @@
   display: flex;
   width: 100%;
 }
+
+.BUTTON {
+  height: 2rem;
+  outline: none;
+  color: white;
+  width: 8rem;
+  border-radius: 0.5rem;
+  border: 0.09rem solid white;
+  background-color: #272236;
+}
+
+.BUTTON:hover {
+  background-color: #272236;
+}
+
+.BUTTON:active {
+  background-color: white;
+  color: black;
+}
+
+.animation {
+  width: 200px;
+}
+
+.animation:hover {
+  -webkit-animation: example 5s linear 2s infinite alternate;
+          animation: example 5s linear 2s infinite alternate;
+}
+
+@-webkit-keyframes example {
+  from {
+  }
+  to {
+    background-color: green;
+  }
+}
+
+@keyframes example {
+  from {
+  }
+  to {
+    background-color: green;
+  }
+}
 /*# sourceMappingURL=header.css.map */

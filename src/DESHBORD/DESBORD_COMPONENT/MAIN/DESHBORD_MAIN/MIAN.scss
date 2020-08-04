@@ -1,0 +1,150 @@
+$border: 1px solid black;
+
+.MAIN_CONTENT {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: row;
+  background-color: #ffffff;
+}
+.SIDEBAR {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+
+  background-color: rgb(109, 191, 206);
+}
+
+.BUTTON {
+  background-color: white;
+  color: black;
+  padding: 5px;
+  margin-top: 30px;
+  border: $border;
+  outline: none;
+
+  transform: translateZ(0);
+  width: 60%;
+  transition: transform ease-in 1s;
+  &:hover {
+    background-color: gray;
+    backface-visibility: hidden;
+    border: 1px solid black;
+  }
+  &:active {
+    transform: scale(1.05);
+    background-color: white;
+  }
+}
+.BUTT {
+  background-color: white;
+  color: black;
+
+  border: $border;
+  outline: none;
+  margin-left: 5px;
+  border-radius: 10px;
+  transform: translateZ(0);
+  width: auto;
+
+  &:hover {
+    background-color: gray;
+    backface-visibility: hidden;
+    border: 1px solid black;
+  }
+  &:active {
+    background-color: white;
+  }
+}
+.CONTENT_BAR {
+  width: 80%;
+  margin: 2em;
+  border: $border;
+}
+
+.MAINCONTENT {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+ 
+}
+
+.usepr_side-contetn {
+  display: flex;
+  
+}
+
+.Lower_side_content {
+}
+.UPER_LEFT_SIDE {
+  border: $border;
+  width: 70%;
+  height:465px;
+  overflow-y: scroll;
+  
+}
+
+.UPER_RIGHT_SIDE {
+  width: 30%;
+ 
+  border: $border;
+  display: flex;
+
+  flex-direction: column;
+ 
+  margin-left: 1.9em;
+  &-UPER_DIV{
+       display: flex;
+       flex-direction: column;
+margin:1.9em 0em 0em 0em;
+      border: $border;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    h1 {
+      font-size: 3rem;
+    }
+  }
+}
+
+.LEFT_SIDE_TABLE {
+  display: flex;
+  flex-direction: column;
+  &-TABLE_HEADER {
+    display: flex;
+    justify-content: space-between;
+
+    h3 {
+      margin-right: 2em;
+      margin-left: 2rem;
+    }
+  }
+}
+
+.TABLE {
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    border: $border;
+    background-color: white;
+    th {
+      color: black;
+      border: $border;
+
+      padding: 8px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #c9c5c5;
+    }
+
+    td {
+      border: $border;
+      text-align: center;
+      padding: 8px;
+    }
+  }
+}

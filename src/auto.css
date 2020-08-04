@@ -1,0 +1,19 @@
+.animation{
+
+border: 1px solid black;
+height: 100px;
+width: 100px;
+
+animation: Animation 2s ease-in-out 1s infinite ;
+
+
+}
+
+
+@keyframes Animation{
+    from {  background-color:blue ;}
+    to {background-color: green;
+
+    }
+}
+

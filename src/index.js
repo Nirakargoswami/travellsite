@@ -7,10 +7,24 @@ import {
 BrowserRouter as Router
 } from 
 "react-router-dom"
+
+import { Provider } from "react-redux";
+import { createStore } from "redux";
+import Combinereducer from "./Redux/combinereduce";
+import REducerb from  "./Redux/redux.reducer"
+const Store = createStore(
+Combinereducer
+);
+
+
+
+
 ReactDOM.render(
   <React.StrictMode>
     <Router>
-      <App />
+      <Provider store={Store}>
+        <App />
+      </Provider>
     </Router>
   </React.StrictMode>,
   document.getElementById("root")

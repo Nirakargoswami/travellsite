@@ -1,0 +1,36 @@
+.Main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 400px;
+  background-color: black;
+  width: 100%;
+}
+
+.mian_Contetnt {
+  position: absolute;
+  background-color: white;
+  top: 5rem;
+}
+
+.mian_Contetnt h1 {
+  font-family: Muli;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 60px;
+  color: #000000;
+}
+
+.mian_Contetnt p {
+  font-family: Muli;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 29px;
+  /* Grey */
+  color: #6D7D8B;
+}
+/*# sourceMappingURL=Header.css.map */

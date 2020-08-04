@@ -1,0 +1,73 @@
+
+
+.Main{
+
+   max-width:100%;
+    display: flex;
+ border: 1px solid black;
+    height: 580px;
+    background-color: black;
+
+    background-repeat: no-repeat;
+    background-position: inherit;
+   
+flex-direction: column;
+    
+    background-image: url(../../svetlana-gumerova-GuRgaMvOclM-unsplash.jpg);
+ background-position: center; /* Center the image */
+//   /* Do not repeat the image */
+  background-size: cover;
+}
+.hader{
+  height: 3rem;
+position: sticky;
+width: 100%;
+z-index: 10;
+display: flex;
+align-items: center;
+top:0px;
+margin: 0px;
+padding:0px;
+background-color:  #FECC37;;
+}
+
+.mian_Contetnt{
+  
+    position: absolute;
+    background-color: transparent;
+   left: 93px;
+top: 200px;
+    width: 595px;
+height: 176px;
+h1{
+font-family: Muli;
+font-style: normal;
+font-weight: 800;
+font-size: 48px;
+line-height: 60px;
+
+color: #000000;
+}
+
+p{
+font-family: Muli;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 113.2%;
+/* or 23px */
+
+
+/* Grey */
+
+color: #6D7D8B;
+
+/* Grey */
+
+
+}
+
+}
+
+
+

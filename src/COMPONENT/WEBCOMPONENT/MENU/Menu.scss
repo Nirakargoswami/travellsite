@@ -1,0 +1,37 @@
+.Button{
+ font-size: 15px;
+    color:white;
+   
+    :hover{
+    color:rgb(14, 13, 13);
+    border-bottom:1px solid white;
+  }
+}
+
+
+
+
+
+.MYBUTTON {
+  background-color: transparent;
+ 
+  padding:8px;
+
+  outline: none;
+border: 1px solid rgb(0, 0, 0);
+  transform: translateZ(0);
+  
+color: white;
+  transition: transform ease-in 1s;
+  &:hover {
+    background-color:transparent;
+    backface-visibility: hidden;
+    border: 1px solid rgb(255, 255, 255);
+  
+  }
+  &:active {
+    transform: scale(1.05);
+    background-color: white;
+  }
+}
+

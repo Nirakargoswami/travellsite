@@ -87,13 +87,10 @@ padding:  0.5rem 1rem 1.5rem 1.2rem;
  
 }
 
-
-
 .HEADER_LEFT_SIDECONTNTE {
   display: flex;
   width: 100%;
 }
-
 
 
 .BUTTON{
@@ -113,3 +110,23 @@ padding:  0.5rem 1rem 1.5rem 1.2rem;
   color: black;
 }
 }
+
+
+
+.animation{
+
+width: 200px;
+  &:hover{
+animation:example 5s linear 2s infinite alternate;
+
+  }
+  
+}
+
+ @keyframes example {
+from{}
+to{background-color: green;}
+
+
+}
+

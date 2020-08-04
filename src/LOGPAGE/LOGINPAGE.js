@@ -2,13 +2,14 @@
 
 import React, { Component } from 'react'
 import {auth}  from   "./FIREBASE_CONFIGURATION"
-import SINGUP from "./SINGHUP"
+// import SINGUP from "./SINGHUP"
 import "/home/bhumika/Desktop/TEST/test-app/src/AUTHENTICATION/LOGINPAGE/loginpage.scss";
-import PropTypes from 'prop-types'
+// import PropTypes from 'prop-types'
 import {signinWithGoogle }  from "./FIREBASE_CONFIGURATION"
 import {userprofile }  from "./FIREBASE_CONFIGURATION"
 import IMAGE from "/home/bhumika/Desktop/TEST/test-app/src/Mask Group.png";
-
+import {connect} from "react-redux";
+import {Redirect}  from "react-router-dom"
 class LOGIN_PAGE extends Component {
   constructor(props) {
     super(props);
@@ -53,12 +54,12 @@ class LOGIN_PAGE extends Component {
   
 
   render() {
-    const {user} = (this.props)
+    
     console.log(this.props)
-     console.log(user)
+    
     return (
       <div>
-        {(this.props.user === null) ?  (
+        {this.props.user === null ? (
           <div>
             {/* DOWN HEAR WE DEFINE A MAIN OF THE LOG IN PAGE  */}
 
@@ -116,9 +117,9 @@ class LOGIN_PAGE extends Component {
               {/* down heaer main box div so do noot tiuch */}
             </div>
           </div>
-        ):(
-          this.props.history.push("/")
-        ) }
+        ) : (
+          <Redirect to="Userform" />
+        )}
 
         {/* /////////// */}
 
@@ -128,6 +129,11 @@ class LOGIN_PAGE extends Component {
   }
 }
 
+const mapStateToprops = (state) => {
+  return {
+user: state.LOGIN_REDUCER.user
 
+  }
+}
 
-export default LOGIN_PAGE;
+export default connect(mapStateToprops,null)(LOGIN_PAGE);
