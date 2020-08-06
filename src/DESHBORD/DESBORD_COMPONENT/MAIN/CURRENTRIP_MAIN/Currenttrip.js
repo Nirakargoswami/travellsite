@@ -1,7 +1,7 @@
 
 
 import React, { Component } from 'react';
-import "/home/bhumika/Desktop/TEST/test-app/src/DESHBORD/DESBORD_COMPONENT/MAIN/CURRENTRIP_MAIN/currnettrip.scss";
+import "./currnettrip.scss";
 import person from "/home/bhumika/Desktop/TEST/test-app/src/photo-1450297350677-623de575f31c.jpeg";
 import { Link} from "react-router-dom";
 class Currenttrip extends Component {

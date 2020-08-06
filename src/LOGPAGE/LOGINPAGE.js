@@ -3,7 +3,7 @@
 import React, { Component } from 'react'
 import {auth}  from   "./FIREBASE_CONFIGURATION"
 // import SINGUP from "./SINGHUP"
-import "/home/bhumika/Desktop/TEST/test-app/src/AUTHENTICATION/LOGINPAGE/loginpage.scss";
+import "LOGINPAGE/loginpage.scss";
 // import PropTypes from 'prop-types'
 import {signinWithGoogle }  from "./FIREBASE_CONFIGURATION"
 import {userprofile }  from "./FIREBASE_CONFIGURATION"

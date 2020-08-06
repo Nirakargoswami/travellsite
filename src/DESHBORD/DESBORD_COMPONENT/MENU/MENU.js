@@ -1,5 +1,5 @@
 import React from 'react';
-import "/home/bhumika/Desktop/TEST/test-app/src/DESHBORD/DESBORD_COMPONENT/MENU/MENU.scss";
+import "./MENU.scss";
 const MENU = () => {
     return (
       <div>

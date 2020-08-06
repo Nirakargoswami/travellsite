@@ -1,6 +1,7 @@
 import React from "react";
 import image from "/home/bhumika/Desktop/TEST/test-app/src/photo1.jpeg";
-import "/home/bhumika/Desktop/TEST/test-app/src/COMPONENT/MAIN./Main.scss";
+import "./Main.scss";
+
 import Landsacpe1 from "/home/bhumika/Desktop/TEST/test-app/src/compress.jpg";
 
 import {Link} from "react-router-dom";

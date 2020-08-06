@@ -1,5 +1,5 @@
 import React from 'react';
-import "/home/bhumika/Desktop/TEST/test-app/src/DESHBORD/DESBORD_COMPONENT/MAIN/DESHBORD_MAIN/MIAN.scss";
+import "./MIAN.scss";
 import {Link } from "react-router-dom";
 
 const MAIN = () => {
